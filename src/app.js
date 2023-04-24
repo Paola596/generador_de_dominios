@@ -8,7 +8,7 @@
     for(let second of adj){
       for(let third of noun){
         for(let domain of ext){
-          console.log(`${first} ${second} ${third}.${domain}`)
+          console.log(`${first}${second}${third}.${domain}`)
         }
       }
     }
