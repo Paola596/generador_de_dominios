@@ -4,13 +4,7 @@
   let noun = ["king","kitty", "bear", "person", "neighbor"];
   let ext = ["com","net", "ve", "ea"];
 
-  for(let first of pronoun){
-    for(let second of adj){
-      console.log(`${first}.${second}`)
-    }
-  }
-
-/*   for(let first of pronoun){
+ for(let first of pronoun){
     for(let second of adj){
       for(let third of noun){
         for(let domain of ext){
@@ -18,4 +12,4 @@
         }
       }
     }
-  } */
+  }
