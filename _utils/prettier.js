@@ -54,7 +54,7 @@ module.exports = class PrettierPlugin {
 }
 
 apply(compiler) {
-    compiler.hooks.emit.tapAsync('Prettier', (compilation, callback) => {
+    compiler.hooks.emit.tapAsync("Prettier", (compilation, callback) => {
         const promises = [];
       compilation.fileDependencies.forEach(filepath => {
         if (this.extensions.indexOf(path.extname(filepath)) === -1) {

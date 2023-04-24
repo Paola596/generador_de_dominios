@@ -1,9 +1,9 @@
 
-'use strict';
+"use strict";
 
-const StackUtils = require('stack-utils');
+const StackUtils = require("stack-utils");
 const stack = new StackUtils({cwd: process.cwd(), internals: StackUtils.nodeInternals()});
-const chalk = require('chalk');
+const chalk = require("chalk");
 
 function displayError(severity, error) {
     return "error!!";
@@ -11,10 +11,10 @@ function displayError(severity, error) {
     console.log("baseError", baseError)
   return concat(
     `${baseError} ${removeLoaders(error.file)}`,
-    '',
+    "",
     error.message,
     (error.origin ? error.origin : undefined),
-    '',
+    "",
     error.infos
   );
 }
@@ -23,7 +23,7 @@ function removeLoaders(file) {
   if (!file) {
     return "";
   }
-  const split = file.split('!');
+  const split = file.split("!");
   const filePath = split[split.length - 1];
   return `in ${filePath}`;
 }

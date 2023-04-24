@@ -1,29 +1,21 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+  let pronoun = ["the","our", "sir", "insta", "this"];
+  let adj = ["great","small", "fluffy", "boring", "crazy"];
+  let noun = ["king","kitty", "bear", "person", "neighbor"];
+  let ext = ["com","net", "ve", "ea"];
 
-window.onload = function() {
-  //write your code here
+  for(let first of pronoun){
+    for(let second of adj){
+      console.log(`${first}.${second}`)
+    }
+  }
 
-
-  console.log("Hello Rigo from the console!");
-};
-
-
-let generate =() => {
-  let pronoun = ['the','our', 'sir', 'insta', 'this'];
-  let adj = ['great','small', 'fluffy', 'boring', 'crazy'];
-  let noun = ['king','kitty', 'bear', 'person', 'neighbor'];
-  let ext = ['com','net', 've', 'ea'];
-
-  let thePronoun = Math.floor(Math.random()*pronoun.length);
-  let theAdj = Math.floor(Math.random()*adj.length);
-  let theNoun = Math.floor(Math.random()*noun.length);
-  let theExt = Math.floor(Math.random()*ext.length);
-
-  return 'www.'+pronoun[thePronoun]+' '+adj[theAdj]+' ' +noun[theNoun]+'.'+ext[theExt];
-
-}
+/*   for(let first of pronoun){
+    for(let second of adj){
+      for(let third of noun){
+        for(let domain of ext){
+          console.log(`${first} ${second} ${third}.${domain}`)
+        }
+      }
+    }
+  } */
